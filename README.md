@@ -1,3 +1,3 @@
-<h1> web-frontend-basics </h1>
-Codebase to help people get started with frontend web development.
+<h1> TODO TITLE </h1>
+<p> TODO BODY </p>
 

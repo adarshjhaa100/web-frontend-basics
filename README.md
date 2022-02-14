@@ -1,2 +1,3 @@
-# web-frontend-basics
-Codebase to help people in getting started with frontend web development
+<h1> web-frontend-basics </h1>
+Codebase to help people get started with frontend web development.
+

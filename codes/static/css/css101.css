@@ -1,0 +1,40 @@
+p,ul {
+    color: rgb(236, 241, 234);
+    width: fit-content;
+    font-family: sans-serif;
+    line-height: 2;
+    font-size: large;
+    letter-spacing: 2px;
+   
+    
+}
+
+body {
+    background-color: rgb(42, 41, 41);
+    color: aliceblue;
+    padding: 5px;
+    border: 5px solid white;
+    width: 1000px;
+    margin: 0px auto; /* auto divides the horizontal space evenly from left and right */
+    padding: 10px 20px 20px 20px; /* top right bottom left */
+}
+
+/* Attribute selector */
+img[src] {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-decoration: wavy;
+    text-shadow: 2px 2px 1px rgb(180, 180, 179);
+}
+
+/* Pseudo class selector. Apply style only when is specific state */
+p:hover {
+    color: rgb(109, 161, 144);
+}

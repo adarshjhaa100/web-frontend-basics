@@ -49,7 +49,15 @@
                 - parseInt("23")
                 - 1* "23"
         String:
-            
+            Convert an object/array/number etc to string: toString(obj)
+                * provided toString is defined
+            Methods:
+                length:             .length : Number 
+                contains:           .includes(substring) : Boolean
+                starts/ends with:   .startsWith(sub) : Boolean
+                substring:          .slice(start, end+1) : String
+                replace:            .replace(originalSubstring, newSubstring) : String
+                uppercase/lowercase:.toUpperCase : String
                     
 */
 

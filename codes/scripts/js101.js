@@ -13,8 +13,8 @@
 */
 /* 
 - Browser tabs run in separate execution environments.
-- async and defer: async - script loading will not block following scripts from loading, defer - script loading will block following scripts from loading                 
-
+- async and defer: async - script loading will not block following scripts from loading, 
+  defer - script loading will block following scripts from loading                 
 */
 
 
@@ -56,7 +56,10 @@ Note: Predicate in JS is a callback functions which returns a boolean
                 - parseInt("23")
                 - 1* "23"
         String:
-            Convert an object/array/number etc to string: toString(obj)
+            Convert an object/array/number etc to string: .toString(RADIX)
+            Where radix by default is 10
+            It can be anything such as 2, 8, 16 etc.
+            Number(2).toString(2) = '10'
                 * provided toString is defined
             Methods:
                 length:             .length : Number 

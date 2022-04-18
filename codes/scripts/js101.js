@@ -108,4 +108,40 @@ Note: Predicate in JS is a callback functions which returns a boolean
 
 
 */
+/*
+    JS Builidng BLocks:
+        Conditionals:
+            * boolean true: 
+                anything that's not false, undefined, NaN, Null, 0 or an empty string('')
+        Loops:
+            for...of loops:
+                for(item of arr)
+                    //do something
+            functions:
+                anonymous function:
+                    function(){}
+                    this type of function can be used to pass as a callback
+                scope:
+                    when invoking multiple files, try limiting variable scope inside functions which will save from lot of unexpected issues
+                events:
+                    * definition: actions within a program (like user input, http request received, process completion, data load etc. ) 
+                      handler: events are generally are monitored by specific functions known as event handlers which fire some other function in response to an event
+                      events are not present in core JS. Generally, they come as a part of APIs.
+                    * addEventListener(event, action) : This is an object method which calls action when event occurs. 
+                      this is available as part of the browser API. 
+                    * some examples of events:
+                        click: 
+                        focus and blur: switch to another tab triggers blur, switching to the tab in question triggers focus
+                        mouseover /mouseout:
+                    Removing the Events: when there are too many elements with events attached, it may slow down the application. 
+                    For that, we can remove the events using two ways:
+                        * obj.removeEventListener(event, action): removes the event listener associated with the object 
+                        AbortSignal: add signal to all the events and abort them at once.
+                            controller = new AbortController()
+                            addEventListener(event, action, {signal:controller.signal})
+                            ...
+                            controller.abort() // will remove events from all the listeners where signal is added
+                                                
+
+*/
 

@@ -104,7 +104,7 @@ Note: Predicate in JS is a callback functions which returns a boolean
             Iteration:
                 for ( ele of arr)
                     // do something with ele
-        
+
 
 
 */
@@ -141,7 +141,24 @@ Note: Predicate in JS is a callback functions which returns a boolean
                             addEventListener(event, action, {signal:controller.signal})
                             ...
                             controller.abort() // will remove events from all the listeners where signal is added
-                                                
+                    * html event handler attributes should never be used mas they are outdated and not considered a best practice.
+                    
+                    Event Objects:
+                        These objects are automatically passed down to callback functions as an optional parameter.
+                        Its generally a subclass of EventObject ( PinterEvent, KeyboardEvent etc) which contains attributes including those specific to the event type.
+                        like keydown event object has a "key" attribute which stores the key pressed.
+
+                    Event bubbling and capturing: How browser handles the event listeners on nested elements.
+                        event on a parent propogates to a child element.
+                        eg: container
+                                div1
+                                    div2
+                        * If we add event to parent container and click on any element within the nested chain,
+                          the event will be triggered. This can cause multiple issues, if child has a different intended action, parent's event may interfere with it.
+                          
+                          * event.currentTarget gives the element which triggered the event.
+
+
 
 */
 
